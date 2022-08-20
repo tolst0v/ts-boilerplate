@@ -1,0 +1,58 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "no-console": "warn",
+        "@typescript-eslint/array-type": "error",
+        "@typescript-eslint/ban-ts-comment": "error",
+        "@typescript-eslint/ban-types": "error",
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/no-duplicate-enum-values": "error",
+        "@typescript-eslint/no-dynamic-delete": "error",
+        "@typescript-eslint/no-useless-empty-export": "error",
+        "@typescript-eslint/prefer-literal-enum-member": "error",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/no-constant-condition": "off",
+        "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            {
+                "allowExpressions": false,
+                "allowTypedFunctionExpressions": false,
+                "allowHigherOrderFunctions": false,
+                "allowDirectConstAssertionInArrowFunctions": false,
+                "allowConciseArrowFunctionExpressionsStartingWithVoid": false
+            }
+        ],
+        "@typescript-eslint/naming-convention": [
+            "error",
+            {
+                "selector": "variable",
+                "format": [
+                    "camelCase",
+                    "snake_case",
+                    "UPPER_CASE"
+                ]
+            }
+        ],
+        "@typescript-eslint/typedef": [
+            "error",
+            {
+                "arrayDestructuring": true,
+                "arrowParameter": true,
+                "memberVariableDeclaration": true,
+                "objectDestructuring": true,
+                "parameter": true,
+                "propertyDeclaration": true,
+                "variableDeclaration": true
+            }
+        ]
+    }
+}

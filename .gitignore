@@ -1,0 +1,9 @@
+.vscode
+node_modules
+package-lock.json
+*.exe
+dist
+dist_prod
+dist_dev
+yarn-error.log
+yarn.lock
